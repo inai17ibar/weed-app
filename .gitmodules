@@ -1,0 +1,6 @@
+[submodule "react-weed-frontend"]
+	path = react-weed-frontend
+	url = https://github.com/inai17ibar/react-weed-frontend
+[submodule "go-weed-backend"]
+	path = go-weed-backend
+	url = https://github.com/inai17ibar/go-weed-backend

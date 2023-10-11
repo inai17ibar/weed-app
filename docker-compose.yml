@@ -5,6 +5,8 @@ services:
     build:
       context: ./go-weed-backend
       dockerfile: Dockerfile
+    volumes:
+      - sqlite-data:/weed-app/go-weed-backend/todos.db
     ports:
       - "8081:8081"
 
@@ -16,3 +18,6 @@ services:
       - "3000:3000"
     environment:
       - REACT_APP_BACKEND_URL=http://backend:8081
+
+volumes:
+  sqlite-data:
